@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.0.0-codex-rc.1
+
+- Normalized Workspace context gating.
+- Workspace no longer acts as a universal execution blocker.
+- Preserved blocking versus non-blocking context classification.
+- Routing regression suite passed 20/20 scenarios.
+- Made no intentional changes to task modules 10–25.
+
 ## 3.0.0-codex-alpha.3
 
 - Added intent resolution and Primary Mode routing.
