@@ -1,0 +1,6 @@
+workspace/WORKSPACE.md
+workspace/private/
+.env
+.env.*
+credentials/
+secrets/
