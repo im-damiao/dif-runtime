@@ -261,6 +261,14 @@ Documentation Recommendation
 
 Design System Inclusion Recommendation
 
+### Confirmed Reuse During Materialization
+
+Keep an inventory of official component, variant, property, icon, and pattern matches confirmed during upstream inspection.
+
+For every confirmed match that remains functionally applicable, materialize the official solution. Before substituting it, record a concrete incompatibility and reclassify the element under the Component & Design System Policy.
+
+Do not replace a confirmed applicable match with a primitive, Local Composition, generic component, Unicode symbol, or manual recreation without that record.
+
 ---
 
 ## Step 7 — Foundations
@@ -527,6 +535,15 @@ No inconsistent interactions.
 
 No unnecessary visual innovation.
 
+Before completion, compare confirmed Design System matches with the elements actually used in the materialized interface. For each match, record:
+
+- confirmed solution;
+- used: yes or no;
+- location of use; and
+- incompatibility justification when not used.
+
+An unqualified `confirmed: yes` and `used: no` is a Design System compliance failure.
+
 ---
 
 # Quality Gates
@@ -536,6 +553,8 @@ Before completing verify:
 ✓ Library selected
 
 ✓ Components reused
+
+✓ Confirmed applicable matches reused or reclassified with evidence
 
 ✓ Foundations respected
 
@@ -722,4 +741,3 @@ This workflow is successful when:
 • The design is implementation-ready.
 
 The UI must be scalable, maintainable and ready for engineering without requiring structural redesign.
-

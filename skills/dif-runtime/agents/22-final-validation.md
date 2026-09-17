@@ -197,6 +197,17 @@ Component Reuse
 
 No unauthorized Design System deviations should remain.
 
+Compare the confirmed official matches from Discovery, Design System Review, audits, and other inspections with the Design System elements actually used in the materialized result.
+
+For every confirmed match, verify:
+
+- confirmed solution;
+- used: yes or no;
+- location of use; and
+- concrete incompatibility evidence when not used.
+
+If a confirmed functionally applicable solution was not used and no incompatibility is recorded, classify the result as a Design System compliance failure. Do not approve the result as `Ready` while any such failure remains.
+
 ---
 
 ## Step 6 — Accessibility Validation
@@ -439,6 +450,8 @@ Before completing verify:
 
 ✓ Design System validated
 
+✓ Confirmed applicable matches reconciled with actual usage
+
 ✓ Accessibility validated
 
 ✓ Engineering ready
@@ -642,4 +655,3 @@ This workflow is successful when:
 • Risks are explicitly accepted or mitigated.
 
 The Final Validation represents the formal quality gate before implementation, release or publication.
-

@@ -1,5 +1,14 @@
 # Changelog
 
+## 3.1.0
+
+- Added a mandatory reuse contract for confirmed applicable official Design System solutions.
+- Added reconciliation between confirmed matches and actually used elements during UI Design materialization.
+- Blocks `Ready` when a confirmed applicable match is unused without documented functional incompatibility.
+- Preserved Local Composition for confirmed gaps and documented functional incompatibilities.
+- Kept external assets outside this reuse obligation.
+- Added confirmed Design System reuse regression scenarios A–F.
+
 ## 3.0.0
 
 - Promoted the Release Candidate to the first stable DIF Runtime release.

@@ -195,6 +195,24 @@ Human approval before Design System evolution.
 
 ---
 
+# Confirmed Component Reuse
+
+When Discovery, Design System Review, an audit, or another evidence-based inspection confirms an official component, variant, property, icon, or pattern as applicable to a materialized element, that decision is binding for the current scope.
+
+During materialization, reuse the confirmed official solution as an instance, variant, property, icon, or pattern. Do not silently replace it with primitives, Local Composition, a generic alternative, Unicode symbols, or a manual visual recreation.
+
+Before moving to the next level of the Component Reuse Policy, an agent may reclassify a confirmed match only when a concrete functional incompatibility is identified and recorded with:
+
+- the confirmed official solution;
+- the affected element;
+- the incompatibility evidence;
+- the updated classification; and
+- the policy level selected after reclassification.
+
+This requirement applies only to confirmed and functionally applicable matches. It does not require an official component for assets, maps, photography, product-specific diagrams, or other content outside the Design System.
+
+---
+
 # New Component Policy
 
 If no reusable component exists:
