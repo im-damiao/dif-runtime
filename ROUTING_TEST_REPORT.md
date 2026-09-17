@@ -36,4 +36,39 @@ Conceptual validation of intent resolution, Primary Mode routing, context gating
 
 ## Content Preservation
 
-No changes were made to DESIGN.md, agents/00-system.md through agents/04-workspace-context.md, agents/10-analyze-brief.md through agents/25-retrospective.md, or MIGRATION_REPORT.md.
+At the time of the original routing validation, no changes were made to DESIGN.md, agents/00-system.md through agents/04-workspace-context.md, agents/10-analyze-brief.md through agents/25-retrospective.md, or MIGRATION_REPORT.md. The final Workspace Context validation changes only agents/04-workspace-context.md.
+
+## Final Workspace Context Validation
+
+### Previous Divergence
+
+agents/04-workspace-context.md could require a complete Workspace before every design task, conflicting with task-specific context gating.
+
+### Change Applied
+
+Workspace consultation, initialization, checklist, and context output now require only information relevant to the current task. Missing information is classified as Known, Unknown, Blocking Unknown, or Non-Blocking Unknown.
+
+### Cases A–D
+
+| Case | Result |
+| --- | --- |
+| A — flow analysis with no Workspace | Pass: continue with available flow material; unrelated context is not required. |
+| B — final UI using unidentified company Design System | Pass: Design System is a Blocking Unknown when no reliable source supports correct execution. |
+| C — retrospective with unknown Design System | Pass: continue unless Design System context is relevant to the retrospective. |
+| D — Design System compliance review with unidentified system | Pass: Design System identity is a Blocking Unknown; request the required source. |
+
+### Routing Regression Suite
+
+20/20 scenarios passed without modifying the test scenarios.
+
+### Regression Check
+
+- No organizational context or Design System may be invented.
+- Blocking information remains required before unsafe execution.
+- Component governance and human approval remain unchanged.
+- Design System discovery and Runtime priorities remain unchanged.
+- Modules 10–25 remain unchanged.
+
+### Remaining Pending Items
+
+None critical.
