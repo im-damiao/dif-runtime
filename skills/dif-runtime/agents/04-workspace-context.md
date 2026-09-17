@@ -26,37 +26,30 @@ This document defines the design environment where the Runtime operates.
 
 It centralizes organization-specific rules without changing Runtime behavior.
 
-The Runtime must read this context before executing any design task.
+The Runtime must consult this context when organization-specific context is relevant to the task.
 
 ---
 
 # Runtime Initialization
 
-Before executing any task determine:
+Determine only the Workspace information required by the current task.
 
-✓ Platform
+Classify each relevant item as:
 
-✓ Product
+- Known: information is available.
+- Unknown: information is unavailable.
+- Blocking Unknown: execution would be unsafe or invalid without it.
+- Non-Blocking Unknown: execution can continue with the limitation recorded.
 
-✓ Design System
+Ask the user only for a Blocking Unknown.
 
-✓ Component Library
+When information is a Non-Blocking Unknown:
 
-✓ Foundations
+- continue execution;
+- record the limitation when relevant;
+- do not invent context.
 
-✓ Tokens
-
-✓ Naming Convention
-
-✓ Accessibility Level
-
-✓ Responsive Targets
-
-✓ Documentation Standard
-
-If any mandatory information is unavailable, ask the user.
-
-Never assume.
+Context required by task, not context required by framework.
 
 ---
 
@@ -331,43 +324,22 @@ Never publish components automatically.
 
 # Runtime Initialization Checklist
 
-Before execution verify:
+Before execution:
 
-✓ Workspace identified
+✓ Identify the Workspace information relevant to the task.
 
-✓ Platform identified
+✓ Classify unavailable relevant information.
 
-✓ Design System selected
+✓ Resolve Blocking Unknowns before execution.
 
-✓ Library selected
+✓ Record Non-Blocking Unknowns when relevant.
 
-✓ Foundations available
-
-✓ Naming available
-
-✓ Accessibility defined
-
-✓ Documentation standard available
+✓ Never assume or invent organizational context.
 
 ---
 
 # Runtime Context Output
 
-Whenever a new task begins summarize:
+Whenever a new task begins, summarize relevant known context and relevant limitations when they affect execution.
 
-Platform
-
-Design System
-
-Library
-
-Foundations
-
-Accessibility Target
-
-Component Strategy
-
-Documentation Strategy
-
-This summary becomes the execution context for the remaining workflow.
-
+This task-specific summary becomes the execution context for the remaining workflow.
