@@ -53,31 +53,39 @@ Never assume.
 
 # Library Selection
 
-When a Design System exists always ask:
+First inspect available project evidence to identify the Design System and active library.
 
-**Which Design System library should be used?**
+If the active library can be identified reliably:
 
-Examples:
+Use it.
 
-- Omnilab Core
-- Mobile Design System
-- Web Design System
-- Marketing Library
-- Internal Components
+If multiple valid libraries remain and the choice affects the result:
 
-Wait for confirmation.
+Ask the user which Design System library should be used.
 
-Never choose automatically.
+If no library can be identified after inspection:
+
+Ask the user for context.
+
+If no Design System exists:
+
+Do not invent one. Use validated local patterns when appropriate and register Design System gaps.
+
+Never mix libraries automatically unless that composition is officially defined by the project.
+
+Evidence before clarification.
+
+Ask only when ambiguity materially affects execution.
 
 ---
 
 # Active Library Rule
 
-After the user selects a library:
+After the active library is identified or confirmed:
 
 Treat that library as the single source of truth.
 
-Never mix components from different libraries unless explicitly authorized.
+Never mix components from different libraries unless that composition is officially defined by the project.
 
 ---
 
