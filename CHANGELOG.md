@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.0
+
+- Promoted the Release Candidate to the first stable DIF Runtime release.
+
 ## 3.0.0-codex-rc.1
 
 - Normalized Workspace context gating.
