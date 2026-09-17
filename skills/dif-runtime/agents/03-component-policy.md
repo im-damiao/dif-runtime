@@ -173,9 +173,25 @@ Always follow this priority:
 
 ↓
 
-4 New Component
+4 Confirmed Gap
 
-Creating a new component is the last option.
+↓
+
+5 Component Proposal
+
+↓
+
+6 Human Approval
+
+↓
+
+7 Component Creation
+
+Reuse before creating.
+
+Proposal before structural change.
+
+Human approval before Design System evolution.
 
 ---
 
@@ -183,9 +199,16 @@ Creating a new component is the last option.
 
 If no reusable component exists:
 
-Create a scalable component.
+1. Confirm the gap with evidence.
+2. Verify whether an existing variant or pattern resolves the requirement.
+3. Document the gap.
+4. Propose a reusable solution.
+5. Identify the impact on the Design System.
+6. Recommend creation when appropriate.
+7. Do not create a structural component automatically.
+8. Enter Component Authoring Mode only when component creation is explicitly requested or approved.
 
-Every new component should define:
+The proposal or approved component should define:
 
 - Name
 - Category
@@ -346,4 +369,3 @@ Whenever component decisions occur include:
 The Runtime should contribute to the continuous evolution of the Design System.
 
 It should never increase inconsistency.
-
