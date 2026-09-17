@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.0.0-codex-alpha.3
+
+- Added intent resolution and Primary Mode routing.
+- Added supporting-module, dependency, and context-gate resolution.
+- Added lightweight Routing Trace guidance and routing test scenarios.
+- Made no intentional methodological changes to workflows 10–25.
+
 ## 3.0.0-codex-alpha.2
 
 - Normalized Design System and library selection through project evidence.
