@@ -1,9 +1,6 @@
 ---
 id: DIF-RUNTIME-016
 title: Accessibility Review
-name: accessibility-review
-description: >
-  MUST use this Skill when the user's primary intent is accessibility evaluation, accessibility audit, WCAG compliance, keyboard navigation, focus, contrast, semantics, assistive technology support, target sizes, cognitive accessibility, or other accessibility barriers. Trigger even when the user does not mention this Skill by name. Accessibility as the primary outcome takes precedence over a general Design Review. Do NOT use for broad design review, UI creation, Design System-only audit, or final validation.
 type: workflow
 version: 1.0.0
 status: stable
@@ -95,41 +92,6 @@ Robust
 Platform accessibility guidelines where applicable.
 
 ---
-
-# Routing Contract
-
-## Use When
-
-Use this workflow when accessibility is the primary evaluation outcome.
-
-Typical signals include:
-
-- accessibility audit or accessibility review;
-- WCAG compliance;
-- keyboard navigation or focus behavior;
-- contrast or non-text contrast;
-- semantic structure, accessible names, ARIA, or screen reader support;
-- touch or target sizes;
-- cognitive, motor, visual, auditory, speech, or responsive accessibility barriers.
-
-## Do Not Use When
-
-Do not select this workflow as the Primary Mode when the user wants:
-
-- a broad UX/UI/design evaluation where accessibility is only one dimension → Design Review;
-- interface creation or material redesign → UI Design;
-- an assessment of the Design System as a system → Design System Review;
-- a conclusive final release or implementation gate across multiple quality dimensions → Final Validation.
-
-# Executor Delegation Contract
-
-Use available native executor capabilities when they improve accessibility inspection, measurement, or evidence collection.
-
-Native capabilities are supporting execution mechanisms. They do not replace this workflow's WCAG target, inclusive-design methodology, severity assessment, evidence requirements, quality gates, limitations, or governance.
-
-Never treat a native audit result as sufficient evidence for aspects that cannot be verified from the available artifact. Mark unverifiable claims explicitly.
-
-Do not hardcode a dependency on a specific executor capability when the same outcome can be achieved through another supported platform.
 
 # Execution Workflow
 
