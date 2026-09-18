@@ -3,7 +3,7 @@ id: DIF-RUNTIME-014
 title: UI Design
 name: ui-design
 description: >
-  Create or materially compose user interfaces from validated requirements, flows, wireframes, or clearly scoped product needs. Use when the primary intent is UI creation or visual materialization. Do not use for evaluation-only requests, specialized accessibility audits, Design System audits, final release validation, or component-authoring requests.
+  MUST use this Skill when the user's primary intent is to create, compose, materialize, or materially evolve a user interface, screen, dashboard, form, table-based product view, or other product UI. Trigger even when the user does not mention UI Design or this Skill by name. Do NOT use when the primary intent is evaluation-only, an accessibility/WCAG audit, a Design System audit, final validation, or reusable component authoring.
 type: workflow
 version: 1.0.0
 status: stable
