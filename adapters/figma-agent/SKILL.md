@@ -230,6 +230,15 @@ Evaluate, where evidence permits:
 
 Native audit tooling may provide measurements or evidence, but DIF owns the standard, interpretation, severity, limitations, and conclusion.
 
+Normative guardrails for WCAG 2.2 AA:
+- Do not invent a generic minimum font size. WCAG 2.2 AA does not define a universal 12px minimum text-size success criterion.
+- SC 1.4.12 is Text Spacing; do not use it as a minimum-font-size criterion.
+- SC 2.5.8 Target Size (Minimum), Level AA, uses 24 × 24 CSS pixels or the criterion's spacing/other exceptions. Do not substitute the 44 × 44 CSS pixel threshold from SC 2.5.5 Target Size (Enhanced), Level AAA.
+- When a Figma measurement is in design pixels, do not automatically claim equivalence to CSS pixels without implementation evidence.
+- Apply contrast thresholds according to the actual WCAG criterion and text/non-text classification; do not infer classification from color alone.
+
+If native audit output conflicts with the applicable accessibility standard, the standard and verified project requirements take precedence. Record the native result as supporting evidence, not normative authority.
+
 Never infer runtime implementation from static Figma evidence.
 
 ### Design System Review
