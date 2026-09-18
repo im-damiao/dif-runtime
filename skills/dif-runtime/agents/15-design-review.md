@@ -1,6 +1,9 @@
 ---
 id: DIF-RUNTIME-015
 title: Design Review
+name: design-review
+description: >
+  Comprehensive evaluation of an existing design across UX, UI, interaction, accessibility, Design System consistency, responsiveness, and implementation readiness. Use when the primary intent is broad design review without redesign. Do not use for UI creation, accessibility-only audits, Design System-only audits, or conclusive final release validation.
 type: workflow
 version: 1.0.0
 status: stable
@@ -72,6 +75,38 @@ Never:
 - Introduce unnecessary redesign.
 
 ---
+
+# Routing Contract
+
+## Use When
+
+Use this workflow when the primary intent is a broad, multidisciplinary evaluation of an existing design.
+
+Typical signals include:
+
+- review this design or interface;
+- identify UX and UI problems;
+- evaluate Design System consistency together with overall design quality;
+- assess implementation readiness as part of a broad design review.
+
+## Do Not Use When
+
+Do not select this workflow as the Primary Mode when the request is specifically:
+
+- to create or materially redesign UI → UI Design;
+- to audit accessibility, WCAG, keyboard, focus, semantics, assistive technology, contrast, or accessibility barriers as the primary outcome → Accessibility Review;
+- to evaluate the Design System itself → Design System Review;
+- to make a conclusive pre-release or pre-handoff gate decision → Final Validation.
+
+Accessibility may be evaluated as one dimension of a broad Design Review. When accessibility is the primary intent, Accessibility Review takes precedence.
+
+# Executor Delegation Contract
+
+Use available native executor capabilities when they improve inspection or evidence collection.
+
+Native capabilities are supporting execution mechanisms. They do not replace this workflow's methodology, scope, severity model, evidence requirements, quality gates, or governance.
+
+Do not hardcode a dependency on a specific executor capability when the same outcome can be achieved through another supported platform.
 
 # Execution Workflow
 
