@@ -3,7 +3,7 @@ id: DIF-RUNTIME-016
 title: Accessibility Review
 name: accessibility-review
 description: >
-  Specialized accessibility evaluation of an existing product, interface, flow, or component. Use when the primary intent is WCAG compliance, keyboard navigation, focus, contrast, semantics, assistive technology support, target sizes, cognitive accessibility, or other accessibility barriers. Do not use for general design review, UI creation, Design System-only audit, or final release validation.
+  MUST use this Skill when the user's primary intent is accessibility evaluation, accessibility audit, WCAG compliance, keyboard navigation, focus, contrast, semantics, assistive technology support, target sizes, cognitive accessibility, or other accessibility barriers. Trigger even when the user does not mention this Skill by name. Accessibility as the primary outcome takes precedence over a general Design Review. Do NOT use for broad design review, UI creation, Design System-only audit, or final validation.
 type: workflow
 version: 1.0.0
 status: stable
