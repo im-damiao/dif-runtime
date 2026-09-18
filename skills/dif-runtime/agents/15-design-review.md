@@ -1,9 +1,6 @@
 ---
 id: DIF-RUNTIME-015
 title: Design Review
-name: design-review
-description: >
-  MUST use this Skill when the user's primary intent is to review or evaluate an existing design broadly across UX, UI, interaction, accessibility, Design System consistency, responsiveness, or implementation readiness without redesigning it. Trigger even when the user says only review, evaluate, inspect, or identify problems. Do NOT use when accessibility/WCAG is the primary audit outcome, when creating UI, when auditing the Design System itself, or when performing a conclusive final validation gate.
 type: workflow
 version: 1.0.0
 status: stable
@@ -75,38 +72,6 @@ Never:
 - Introduce unnecessary redesign.
 
 ---
-
-# Routing Contract
-
-## Use When
-
-Use this workflow when the primary intent is a broad, multidisciplinary evaluation of an existing design.
-
-Typical signals include:
-
-- review this design or interface;
-- identify UX and UI problems;
-- evaluate Design System consistency together with overall design quality;
-- assess implementation readiness as part of a broad design review.
-
-## Do Not Use When
-
-Do not select this workflow as the Primary Mode when the request is specifically:
-
-- to create or materially redesign UI → UI Design;
-- to audit accessibility, WCAG, keyboard, focus, semantics, assistive technology, contrast, or accessibility barriers as the primary outcome → Accessibility Review;
-- to evaluate the Design System itself → Design System Review;
-- to make a conclusive pre-release or pre-handoff gate decision → Final Validation.
-
-Accessibility may be evaluated as one dimension of a broad Design Review. When accessibility is the primary intent, Accessibility Review takes precedence.
-
-# Executor Delegation Contract
-
-Use available native executor capabilities when they improve inspection or evidence collection.
-
-Native capabilities are supporting execution mechanisms. They do not replace this workflow's methodology, scope, severity model, evidence requirements, quality gates, or governance.
-
-Do not hardcode a dependency on a specific executor capability when the same outcome can be achieved through another supported platform.
 
 # Execution Workflow
 
