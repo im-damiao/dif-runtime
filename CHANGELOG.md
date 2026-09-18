@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.2.0
+
+- Added the validated single-entry Figma Agent adapter at `adapters/figma-agent/`.
+- Added `/dif` as the designer-facing entry point for DIF inside Figma Agent.
+- Preserved the modular Runtime in `skills/dif-runtime/` as the canonical source of methodology and governance.
+- Documented the separation of responsibilities between DIF Runtime, Figma Agent native execution capabilities, the active Design System, and human decision-making.
+- Recorded that automatic discovery of independently installed DIF Custom Skills is not a required architectural dependency.
+- Added Figma-specific accessibility interpretation guardrails while preserving WCAG 2.2 AA as the fallback target.
+- Added explicit repository documentation distinguishing the complete Runtime distribution from the Figma Agent adapter.
+- Made no intentional methodological changes to canonical task modules 10–25.
+
 ## 3.1.0
 
 - Added a mandatory reuse contract for confirmed applicable official Design System solutions.
