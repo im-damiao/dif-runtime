@@ -3,7 +3,7 @@ id: DIF-RUNTIME-015
 title: Design Review
 name: design-review
 description: >
-  Comprehensive evaluation of an existing design across UX, UI, interaction, accessibility, Design System consistency, responsiveness, and implementation readiness. Use when the primary intent is broad design review without redesign. Do not use for UI creation, accessibility-only audits, Design System-only audits, or conclusive final release validation.
+  MUST use this Skill when the user's primary intent is to review or evaluate an existing design broadly across UX, UI, interaction, accessibility, Design System consistency, responsiveness, or implementation readiness without redesigning it. Trigger even when the user says only review, evaluate, inspect, or identify problems. Do NOT use when accessibility/WCAG is the primary audit outcome, when creating UI, when auditing the Design System itself, or when performing a conclusive final validation gate.
 type: workflow
 version: 1.0.0
 status: stable
