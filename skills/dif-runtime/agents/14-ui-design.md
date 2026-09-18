@@ -1,6 +1,9 @@
 ---
 id: DIF-RUNTIME-014
 title: UI Design
+name: ui-design
+description: >
+  Create or materially compose user interfaces from validated requirements, flows, wireframes, or clearly scoped product needs. Use when the primary intent is UI creation or visual materialization. Do not use for evaluation-only requests, specialized accessibility audits, Design System audits, final release validation, or component-authoring requests.
 type: workflow
 version: 1.0.0
 status: stable
@@ -88,6 +91,39 @@ Never:
 - Break established interaction patterns.
 
 ---
+
+# Routing Contract
+
+## Use When
+
+Use this workflow when the primary intent is to create, compose, or materially evolve a user interface.
+
+Typical signals include:
+
+- create an interface or screen;
+- transform validated requirements, flows, or wireframes into UI;
+- materialize a visual solution;
+- apply an active Design System while creating UI.
+
+## Do Not Use When
+
+Do not select this workflow as the Primary Mode when the user only wants:
+
+- a broad evaluation of an existing design → Design Review;
+- a specialized accessibility or WCAG audit → Accessibility Review;
+- an assessment of the Design System itself → Design System Review;
+- a final release or implementation gate → Final Validation;
+- creation or evolution of a reusable Design System component → Component Creator.
+
+If the request is evaluation-only, do not modify the interface.
+
+# Executor Delegation Contract
+
+Use available native executor capabilities when they improve inspection or materialization.
+
+Native capabilities are supporting execution mechanisms. They do not replace this workflow's methodology, decision criteria, evidence requirements, Design System policy, quality gates, or governance.
+
+Do not hardcode a dependency on a specific executor capability when the same outcome can be achieved through another supported platform.
 
 # Execution Workflow
 
