@@ -437,19 +437,24 @@ Before completing verify:
 
 ---
 
-# Failure Conditions
+# Release Readiness Rules
 
-Do not approve if:
+A release verdict may only be issued from evidence actually verified in the reviewed scope.
 
-Critical usability issues exist.
+Never convert missing evidence into a negative verdict.
 
-Accessibility blockers remain unresolved.
+`NOT VERIFIED` does not mean `FAILED`.
 
-Design System violations compromise consistency.
+Use:
 
-Implementation risks are unacceptable.
+- `READY` — all critical release domains required by the scope were VERIFIED and no blocking findings remain.
+- `READY WITH CONDITIONS` — critical release domains were VERIFIED and remaining findings are confirmed non-blocking.
+- `NOT READY` — VERIFIED evidence demonstrates at least one release-blocking issue.
+- `NOT VERIFIED` — available evidence is insufficient to determine release readiness and no independently VERIFIED blocker proves the release is not ready.
 
-Business goals are no longer supported.
+If runtime behavior, accessibility, responsive behavior, Design System compliance or engineering readiness are critical to the requested release decision but cannot be verified, release readiness must be `NOT VERIFIED`, unless another VERIFIED finding independently proves a release blocker.
+
+A Critical or High finding is not automatically a release blocker. The finding must contain evidence showing why it blocks release.
 
 ---
 
@@ -581,19 +586,20 @@ Low
 
 ---
 
-# Release Recommendation
+# Release Readiness
 
-Choose one:
+Status:
 
-Approved
+READY | READY WITH CONDITIONS | NOT READY | NOT VERIFIED
 
-Approved with Minor Adjustments
+Evidence:
 
-Requires Rework
+- Verified critical domains
+- Confirmed blocking findings, if any
+- Critical domains not verified
+- Reason for the selected status
 
-Not Ready
-
-Explain the decision.
+Do not issue a stronger verdict than the available evidence supports.
 
 ---
 
