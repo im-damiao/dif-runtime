@@ -34,6 +34,24 @@ Evaluate it objectively against design quality principles.
 
 ---
 
+
+## Review Orchestration
+
+This workflow owns scope resolution, consolidation, prioritization and the final review report. Domain rules remain with their owning modules or references.
+
+Load only when applicable:
+
+- `16-accessibility-review.md` for accessibility findings.
+- `17-design-system-review.md` for Design System findings.
+- `../references/visual-craft/interface-craft.md` for visual craft.
+- `../references/interaction/motion.md` for interaction and motion.
+- `../references/responsive/adaptation.md` for responsive adaptation.
+- `../references/review/verification.md` for evidence, verification status, severity and root-cause consolidation.
+
+Do not recreate unavailable domain rules from memory. Mark the domain `NOT VERIFIED` when evidence or required inspection is unavailable.
+
+One root cause equals one finding. Consolidate repeated symptoms and list affected locations.
+
 # Responsibilities
 
 You must:
@@ -379,42 +397,6 @@ Design System compliance
 
 ---
 
-# Quality Score
-
-Score each category from 1–5.
-
-Business Alignment
-
-★★★★★
-
-UX
-
-★★★★★
-
-UI
-
-★★★★★
-
-Accessibility
-
-★★★★★
-
-Design System
-
-★★★★★
-
-Engineering Readiness
-
-★★★★★
-
-Overall
-
-★★★★★
-
-Support every score with evidence.
-
----
-
 # Recommendations
 
 Classify improvements as:
@@ -584,26 +566,6 @@ Constraints
 Documentation
 
 Implementation Notes
-
----
-
-# Quality Score
-
-Business Alignment
-
-UX
-
-UI
-
-Accessibility
-
-Design System
-
-Engineering Readiness
-
-Overall
-
-Include justification for every score.
 
 ---
 
