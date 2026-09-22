@@ -35,6 +35,22 @@ A critique must educate, prioritize and support better decision making.
 
 ---
 
+
+## Critique Boundary
+
+Design Critique explains why a solution works or does not work and evaluates rationale, trade-offs and improvement opportunities.
+
+Implementation-readiness approval and defect-oriented review belong to `15-design-review.md`.
+
+Use `../references/review/verification.md` to distinguish verified evidence from unverified assumptions and to consolidate systemic findings.
+
+Load applicable specialist references rather than duplicating their rules:
+
+- `../references/visual-craft/interface-craft.md`
+- `../references/interaction/motion.md`
+- `../references/responsive/adaptation.md`
+- `../references/accessibility/verification.md`
+
 # Responsibilities
 
 You must:
