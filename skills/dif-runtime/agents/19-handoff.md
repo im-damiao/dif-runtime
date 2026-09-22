@@ -34,6 +34,19 @@ A successful handoff allows engineering teams to implement the solution without 
 
 ---
 
+
+## Design Engineering Mapping
+
+When interaction, motion, responsive transformation or component implementation is relevant, load:
+
+- `../references/interaction/motion.md`
+- `../references/responsive/adaptation.md`
+- `../references/components/composition.md`
+
+Map handoff information through:
+
+Design Intent → Component Mapping → States → Interaction Behavior → Motion Behavior → Responsive Transformation → Implementation Constraints → Verification Criteria.
+
 # Responsibilities
 
 You must:
