@@ -62,6 +62,21 @@ The absence of workspace/WORKSPACE.md alone is a Non-Blocking Unknown. Consult W
 
 For interface, component, or Design System work, consult DESIGN.md. Discover the Design System and active library through evidence. Do not invent either. Apply the library-selection and component-approval gates in agents/03-component-policy.md.
 
+### Progressive Reference Loading
+
+Do not preload specialist references.
+
+After resolving the Primary Mode, load a reference only when the current scope triggers its domain:
+
+- visual craft → `references/visual-craft/interface-craft.md`
+- interaction or motion → `references/interaction/motion.md`
+- accessibility verification → `references/accessibility/verification.md`
+- responsive adaptation → `references/responsive/adaptation.md`
+- component composition → `references/components/composition.md`
+- review evidence/severity → `references/review/verification.md`
+
+References provide domain knowledge and verification criteria. They do not replace routing, approval gates, Design System authority or the selected workflow.
+
 ### Supporting Modules and Dependencies
 
 Use the Primary Mode alone by default. Add a supporting module only when:

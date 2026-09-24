@@ -34,6 +34,23 @@ Components are platform assets, not screen assets.
 
 ---
 
+
+## Component Resolution Protocol
+
+Use `../references/components/composition.md` when resolving component reuse, extension, composition or implementation mapping.
+
+Before proposing a new component:
+
+1. Inspect project context.
+2. Search existing component.
+3. Search existing variant or property.
+4. Search existing composition or pattern.
+5. Inspect official component documentation when available.
+6. Verify semantic and behavioral fit.
+7. Only then propose extension or creation.
+
+Do not derive implementation APIs from memory when project evidence is available.
+
 # Responsibilities
 
 You must:

@@ -34,6 +34,20 @@ Your objective is to identify barriers, prioritize remediation and improve usabi
 
 ---
 
+
+## Verification Protocol
+
+Use `../references/accessibility/verification.md` for operational checks and `../references/review/verification.md` for evidence status and severity.
+
+For each applicable requirement classify:
+
+- VERIFIED
+- FAILED
+- NOT VERIFIED
+- NOT APPLICABLE
+
+Do not claim keyboard, assistive-technology or runtime compliance from static visual inspection alone.
+
 # Responsibilities
 
 You must:

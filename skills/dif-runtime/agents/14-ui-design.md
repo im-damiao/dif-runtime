@@ -44,6 +44,26 @@ Never design only for aesthetics.
 
 ---
 
+
+## Specialist References
+
+Load only when applicable:
+
+- `../references/visual-craft/interface-craft.md` for visual direction, hierarchy, typography, content and self-critique.
+- `../references/interaction/motion.md` when transitions, gestures, direct manipulation or animated state changes exist.
+- `../references/responsive/adaptation.md` when responsive adaptation is in scope.
+- `../references/components/composition.md` when component selection or composition requires deeper implementation guidance.
+
+### Visual Direction Gate
+
+Before materializing UI:
+
+1. Identify product subject, audience, primary task and existing visual language from available evidence.
+2. Define the intended visual direction within the active Design System.
+3. Trace meaningful visual decisions to Design System, product context, information hierarchy, interaction or accessibility requirements.
+4. Reject unexplained template-like patterns.
+5. Self-review the direction before final materialization.
+
 # Responsibilities
 
 You must:

@@ -34,6 +34,24 @@ Evaluate it objectively against design quality principles.
 
 ---
 
+
+## Review Orchestration
+
+This workflow owns scope resolution, consolidation, prioritization and the final review report. Domain rules remain with their owning modules or references.
+
+Load only when applicable:
+
+- `16-accessibility-review.md` for accessibility findings.
+- `17-design-system-review.md` for Design System findings.
+- `../references/visual-craft/interface-craft.md` for visual craft.
+- `../references/interaction/motion.md` for interaction and motion.
+- `../references/responsive/adaptation.md` for responsive adaptation.
+- `../references/review/verification.md` for evidence, verification status, severity and root-cause consolidation.
+
+Do not recreate unavailable domain rules from memory. Mark the domain `NOT VERIFIED` when evidence or required inspection is unavailable.
+
+One root cause equals one finding. Consolidate repeated symptoms and list affected locations.
+
 # Responsibilities
 
 You must:
@@ -379,42 +397,6 @@ Design System compliance
 
 ---
 
-# Quality Score
-
-Score each category from 1–5.
-
-Business Alignment
-
-★★★★★
-
-UX
-
-★★★★★
-
-UI
-
-★★★★★
-
-Accessibility
-
-★★★★★
-
-Design System
-
-★★★★★
-
-Engineering Readiness
-
-★★★★★
-
-Overall
-
-★★★★★
-
-Support every score with evidence.
-
----
-
 # Recommendations
 
 Classify improvements as:
@@ -455,19 +437,24 @@ Before completing verify:
 
 ---
 
-# Failure Conditions
+# Release Readiness Rules
 
-Do not approve if:
+A release verdict may only be issued from evidence actually verified in the reviewed scope.
 
-Critical usability issues exist.
+Never convert missing evidence into a negative verdict.
 
-Accessibility blockers remain unresolved.
+`NOT VERIFIED` does not mean `FAILED`.
 
-Design System violations compromise consistency.
+Use:
 
-Implementation risks are unacceptable.
+- `READY` — all critical release domains required by the scope were VERIFIED and no blocking findings remain.
+- `READY WITH CONDITIONS` — critical release domains were VERIFIED and remaining findings are confirmed non-blocking.
+- `NOT READY` — VERIFIED evidence demonstrates at least one release-blocking issue.
+- `NOT VERIFIED` — available evidence is insufficient to determine release readiness and no independently VERIFIED blocker proves the release is not ready.
 
-Business goals are no longer supported.
+If runtime behavior, accessibility, responsive behavior, Design System compliance or engineering readiness are critical to the requested release decision but cannot be verified, release readiness must be `NOT VERIFIED`, unless another VERIFIED finding independently proves a release blocker.
+
+A Critical or High finding is not automatically a release blocker. The finding must contain evidence showing why it blocks release.
 
 ---
 
@@ -587,26 +574,6 @@ Implementation Notes
 
 ---
 
-# Quality Score
-
-Business Alignment
-
-UX
-
-UI
-
-Accessibility
-
-Design System
-
-Engineering Readiness
-
-Overall
-
-Include justification for every score.
-
----
-
 # Prioritized Recommendations
 
 Critical
@@ -619,19 +586,20 @@ Low
 
 ---
 
-# Release Recommendation
+# Release Readiness
 
-Choose one:
+Status:
 
-Approved
+READY | READY WITH CONDITIONS | NOT READY | NOT VERIFIED
 
-Approved with Minor Adjustments
+Evidence:
 
-Requires Rework
+- Verified critical domains
+- Confirmed blocking findings, if any
+- Critical domains not verified
+- Reason for the selected status
 
-Not Ready
-
-Explain the decision.
+Do not issue a stronger verdict than the available evidence supports.
 
 ---
 
